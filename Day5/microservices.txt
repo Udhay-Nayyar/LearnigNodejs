@@ -1,0 +1,24 @@
+Microservices Architecture (Split into Services)
+
+✅ Advantages:
+Each service can scale independently
+Cleaner code (each service has one responsibility)
+Teams can work separately
+Better for large applications
+
+
+❌ Disadvantages:
+Complex to manage
+Deployment is harder (multiple services)
+Debugging is tricky (network calls)
+Requires DevOps knowledge (Docker, etc.)
+
+
+---------------------------------------------------------------------------------------------
+⚔️ Simple Analogy (you’ll remember this)
+🧱 Monolith = One big restaurant kitchen
+All chefs working in one room
+If one section breaks → whole system slow
+🧩 Microservices = Multiple food stalls
+Each stall handles one thing
+If one fails → others still work

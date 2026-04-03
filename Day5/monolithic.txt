@@ -1,0 +1,13 @@
+Monolithic Architecture (Single Big App)
+
+✅ Advantages:
+Easy to build (best for beginners)
+Simple deployment (just one server)
+Debugging is straightforward
+
+
+❌ Disadvantages:
+Hard to scale (you scale whole app, not parts)
+Code becomes messy as project grows
+One bug can affect entire system
+Hard for teams to work independently
