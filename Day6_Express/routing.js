@@ -7,10 +7,10 @@ app.use("/contact",(req, res) => {
     res.send("contact page")
 });
 
-
 app.use("/",(req, res) => {
     res.send("baby mast hoo")
 });
+
 
 
 
