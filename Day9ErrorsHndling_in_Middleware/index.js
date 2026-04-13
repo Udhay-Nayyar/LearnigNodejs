@@ -1,3 +1,4 @@
+const e = require("express");
 const express = require("express")
 const app = express()
 //curd operation                 
@@ -18,6 +19,10 @@ const menu = [
     { foodId: 12, foodName: "Chole Bhature", foodType: "Veg", foodPrice: 130 }
 ];
 
+const cart = [
+
+]
+
 app.use(express.json())
 // admin want to read the menu 
 app.get("/admin", (req, res) => {
@@ -37,7 +42,40 @@ app.post("/admin", (req, res) => {
 
 
 //admin want to delete an item 
+app.delete("/admin/:id", (req, res) => {
+    // console.log(req.params)
+    const index = menu.findIndex(i => i.foodId == req.params.id);
+    if (index != -1) menu.splice(index, 1);
+    res.send("item removed sucessfully")
+})
+
+
+
 // user want to add in cart 
+
+app.post("/user/:id", (req, res) => {
+    const index = menu.findIndex(i => i.foodId == req.params.id);
+    if (index != -1) {
+        cart.push(menu[index])
+    }
+
+    res.send("Your cart " + cart)
+})
+
+
+//view cart 
+app.get("/user", (req, res) => {
+    res.status(200).send(cart)
+})
+
+
+
+
+//error handling 
+app.get("/user",(req,res)=>{
+      
+})
+
 // where to listen 
 app.listen(8000, () => {
     console.log("i am running on port number 8000")
