@@ -1,0 +1,32 @@
+why we dont store the video in database ?
+what is surctured , unstructured , semi sturcture 
+
+ACID property 
+Atomicity -> commit or roll (only this should happen in the transaction )
+Consistency -> bfore and after transaction sum of amount should be same
+Isolation -> one trx at one time
+Durablity -> -------------- data nerver erase in any location 
+
+
+
+
+
+Relational data base vs mongo db 
+- normlization 
+- join 
+- vertical scaling
+- horizontal scaling 
+- sharding 
+- replica 
+
+
+Changelleges in distrubted data base ?n every thing should be sync  
+
+
+CAP Theorem ??
+Consistency
+Avalability 
+Partition Tolerence 
+
+
+No Sql -> Not Only Sql (understand)
